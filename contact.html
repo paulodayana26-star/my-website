@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - MyWebsite</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+        <div class="nav-logo">MyWebsite</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="register.html">Register</a>
+            <a href="contact.html" class="active-link">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-container">
+        <section class="page-section form-card max-width-600">
+            <h2>Contact Us</h2>
+            <p class="form-subtitle">Drop us a line and we'll get back to you as soon as possible.</p>
+            <form onsubmit="event.preventDefault(); alert('Message Sent Successfully!');">
+                <div class="form-group">
+                    <label>Your Name</label>
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="you@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea placeholder="How can we help you?" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-dark btn-full">Send Message</button>
+            </form>
+        </section>
+    </div>
+
+</body>
+</html>
